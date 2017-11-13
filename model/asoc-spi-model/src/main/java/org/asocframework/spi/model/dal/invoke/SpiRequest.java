@@ -1,29 +1,36 @@
-package org.asocframework.spi.facade.ro;
-
-import org.asocframework.support.validator.Valid;
-import org.asocframework.support.validator.Validator;
-
-import java.io.Serializable;
+package org.asocframework.spi.model.dal.invoke;
 
 /**
  * @author jiqing
- * @version $Id: SpiProtocol，v 1.0 2017/11/10 14:14 jiqing Exp $
+ * @version $Id: SpiRequest，v 1.0 2017/11/9 19:12 jiqing Exp $
  * @desc
  */
-@Validator
-public class SpiProtocol implements Serializable{
+public class SpiRequest {
 
     /**
-     * 接口名称
+     * spi 接口名称
      */
-    @Valid
     private String method;
+
+    /**
+     * 服务商地址
+     */
+    private String requestPath;
 
     /**
      * 版本号
      */
-    @Valid(belongs = {"v1.0"})
     private String version;
+
+    /**
+     * 签名
+     */
+    private String sign;
+
+    /**
+     * 签名类型
+     */
+    private String singType;
 
     /**
      * 回调url
@@ -33,25 +40,21 @@ public class SpiProtocol implements Serializable{
     /**
      * 业务参数内容
      */
-    @Valid
     private String bizContent;
 
     /**
      * 授权令牌
      */
-    @Valid
     private String token;
 
     /**
      * 访问时间
      */
-    @Valid
     private String timeStamp;
 
     /**
-     * 接口服务提供者id
+     *
      */
-    @Valid
     private String appId;
 
     public String getMethod() {
@@ -62,12 +65,44 @@ public class SpiProtocol implements Serializable{
         this.method = method;
     }
 
+    public String getAppId() {
+        return appId;
+    }
+
+    public void setAppId(String appId) {
+        this.appId = appId;
+    }
+
+    public String getRequestPath() {
+        return requestPath;
+    }
+
+    public void setRequestPath(String requestPath) {
+        this.requestPath = requestPath;
+    }
+
     public String getVersion() {
         return version;
     }
 
     public void setVersion(String version) {
         this.version = version;
+    }
+
+    public String getSign() {
+        return sign;
+    }
+
+    public void setSign(String sign) {
+        this.sign = sign;
+    }
+
+    public String getSingType() {
+        return singType;
+    }
+
+    public void setSingType(String singType) {
+        this.singType = singType;
     }
 
     public String getCallbackUrl() {
@@ -102,11 +137,4 @@ public class SpiProtocol implements Serializable{
         this.timeStamp = timeStamp;
     }
 
-    public String getAppId() {
-        return appId;
-    }
-
-    public void setAppId(String appId) {
-        this.appId = appId;
-    }
 }

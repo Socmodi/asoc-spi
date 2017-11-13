@@ -10,11 +10,6 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>asoc-spi-client</module>
-        <module>asoc-spi-core</module>
-        <module>asoc-spi-service</module>
-        <module>asoc-spi-deploy</module>
-        <module>asoc-spi-facade</module>
         <module>biz/asoc-spi-biz</module>
         <module>dal/asoc-spi-dal</module>
         <module>model/asoc-spi-model</module>
@@ -258,6 +253,12 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-expression</artifactId>
             <version>4.1.6.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.asocframework</groupId>
+            <artifactId>asoc-support</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
