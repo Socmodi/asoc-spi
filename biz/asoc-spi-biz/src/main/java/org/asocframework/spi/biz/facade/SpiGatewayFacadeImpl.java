@@ -9,7 +9,6 @@ import org.asocframework.support.result.Results;
 import org.asocframework.support.validator.ValidateState;
 import org.asocframework.support.validator.ValidateTools;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.Resource;
 
 /**
@@ -40,7 +39,6 @@ public class SpiGatewayFacadeImpl extends BaseServiceFacadeImpl implements SpiGa
             logDebugMessage("SpiGatewayFacadeImpl.invoke", "cost:"+(System.currentTimeMillis() - start), spiProtocol, result);
         }
         return result;
-
     }
 
 }

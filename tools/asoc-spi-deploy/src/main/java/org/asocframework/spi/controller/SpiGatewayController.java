@@ -42,7 +42,7 @@ public class SpiGatewayController {
         writeResponse(spiResponse,response);
     }
 
-    public void writeResponse(SpiResponse spiResponse,HttpServletResponse servletResponse){
+    private void writeResponse(SpiResponse spiResponse,HttpServletResponse servletResponse){
 
     }
 
