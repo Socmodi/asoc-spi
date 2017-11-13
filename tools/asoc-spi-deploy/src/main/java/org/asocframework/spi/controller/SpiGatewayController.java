@@ -28,7 +28,7 @@ public class SpiGatewayController {
         String version = request.getParameter("version");
         String token = request.getParameter("token");
         String callbackUrl = request.getParameter("callbackUrl");
-        String timeSmamp = request.getParameter("timeStamp");
+        String timeStamp = request.getParameter("timeStamp");
 
         SpiRequest spiRequest = new SpiRequest();
         spiRequest.setBizContent(bizContent);
@@ -36,7 +36,7 @@ public class SpiGatewayController {
         spiRequest.setVersion(version);
         spiRequest.setToken(token);
         spiRequest.setCallbackUrl(callbackUrl);
-        spiRequest.setTimeStamp(timeSmamp);
+        spiRequest.setTimeStamp(timeStamp);
         spiRequest.setAppId(appId);
         SpiResponse spiResponse = spiGatewayService.invoke(spiRequest);
         writeResponse(spiResponse,response);
