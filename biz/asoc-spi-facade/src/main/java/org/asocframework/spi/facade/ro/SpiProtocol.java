@@ -17,7 +17,7 @@ public class SpiProtocol implements Serializable{
      * 接口名称
      */
     @Valid
-    private String method;
+    private String method;//serviceName
 
     /**
      * 版本号

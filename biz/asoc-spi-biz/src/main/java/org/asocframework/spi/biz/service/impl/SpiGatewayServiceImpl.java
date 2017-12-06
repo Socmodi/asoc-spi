@@ -2,8 +2,8 @@ package org.asocframework.spi.biz.service.impl;
 
 import org.asocframework.spi.biz.service.SpiGatewayService;
 import org.asocframework.spi.facade.ro.SpiProtocol;
-import org.asocframework.spi.model.dal.invoke.SpiRequest;
-import org.asocframework.spi.model.dal.invoke.SpiResponse;
+import org.asocframework.spi.model.invoke.SpiRequest;
+import org.asocframework.spi.model.invoke.SpiResponse;
 
 /**
  * @author jiqing

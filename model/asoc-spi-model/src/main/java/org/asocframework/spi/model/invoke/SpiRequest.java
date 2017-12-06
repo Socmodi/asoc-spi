@@ -1,4 +1,4 @@
-package org.asocframework.spi.model.dal.invoke;
+package org.asocframework.spi.model.invoke;
 
 /**
  * @author jiqing

@@ -26,9 +26,9 @@ public class SpiGatewayFacadeImpl extends BaseServiceFacadeImpl implements SpiGa
         Result result = null;
         long start = System.currentTimeMillis();
         try{
-            SpiProtocol protocol  = spiGatewayService.invoke(spiProtocol);
             ValidateState state = ValidateTools.volidate(spiProtocol);
             if(state.isPass()){
+                SpiProtocol protocol  = spiGatewayService.invoke(spiProtocol);
                 result = Results.newSuccessResult(protocol);
             }else{
                 result = Results.newFailResult(CommonStateCode.PARAM_ERROR, state.getErrorMsg());

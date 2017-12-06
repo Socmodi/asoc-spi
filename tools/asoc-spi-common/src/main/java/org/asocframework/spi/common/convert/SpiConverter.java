@@ -1,7 +1,7 @@
 package org.asocframework.spi.common.convert;
 
 import org.asocframework.spi.facade.ro.SpiProtocol;
-import org.asocframework.spi.model.dal.invoke.SpiRequest;
+import org.asocframework.spi.model.invoke.SpiRequest;
 
 /**
  * @author jiqing

@@ -1,8 +1,8 @@
 package org.asocframework.spi.controller;
 
 import org.asocframework.spi.biz.service.SpiGatewayService;
-import org.asocframework.spi.model.dal.invoke.SpiRequest;
-import org.asocframework.spi.model.dal.invoke.SpiResponse;
+import org.asocframework.spi.model.invoke.SpiRequest;
+import org.asocframework.spi.model.invoke.SpiResponse;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
@@ -43,7 +43,6 @@ public class SpiGatewayController {
     }
 
     private void writeResponse(SpiResponse spiResponse,HttpServletResponse servletResponse){
-
     }
 
 }
